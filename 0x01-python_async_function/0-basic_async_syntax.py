@@ -7,7 +7,7 @@ Use the random module.
 import asyncio
 import random
 
-async def wait_random (max_delay :int = 10) ->float:
+async def wait_random (max_delay: int = 10) -> float:
   """wait for random time"""
   x = random.uniform(0, max_delay)
   await asyncio.sleep(x)
